@@ -1,0 +1,439 @@
+/* Overriding WordPress native styles */
+
+.CT_CTDI {
+	max-width: none;
+	font-size: 15px;
+}
+
+.CT_CTDI p,
+.CT_CTDI span {
+	font-size: 16px;
+}
+
+.CT_CTDI h2 {
+	text-align: inherit;
+}
+
+.CT_CTDI h2:first-child,
+.CT_CTDI h3:first-child {
+	margin-top: 0;
+}
+
+.CT_CTDI hr {
+	margin: 2.62em 0;
+}
+
+.feature-section+hr {
+	margin-top: 0;
+}
+
+#wpbody select {
+	height     : auto;
+	padding    : .62em;
+	line-height: inherit;
+}
+
+.CT_CTDI .notice {
+	display: block;
+}
+
+.CT_CTDI .notice-warning {
+	display: none;
+}
+
+/* Plugin elements */
+
+.CT_CTDI__demo-import-files {
+	width: 100%;
+}
+
+.CT_CTDI__demo-import-preview-image-message {
+	font-style: italic;
+}
+
+/* Plugin title */
+
+.CT_CTDI__title:before {
+	width    : auto;
+	height   : auto;
+	font-size: inherit;
+}
+
+/* Plugin intro text */
+
+.CT_CTDI__intro-text ul {
+	padding        : 0 4%;
+	list-style-type: square;
+}
+
+/* Plugin switch import mode link*/
+.CT_CTDI__import-mode-switch {
+	float: right;
+}
+
+/* Plugin multi select import and Plugin file upload containers */
+
+.CT_CTDI__file-upload,
+.CT_CTDI__multi-select-import,
+.CT_CTDI__demo-import-notice:not(:empty) {
+	padding         : 4%;
+	margin          : 1.62em 0;
+	background-color: #ffffff;
+	border          : 1px solid #e5e5e5;
+}
+
+.CT_CTDI__file-upload {
+	margin       : 0;
+	margin-bottom: -1px;
+}
+
+.CT_CTDI__file-upload span {
+	font-size  : .81em;
+	font-weight: normal;
+	opacity    : .66;
+}
+
+.CT_CTDI__demo-import-notice:not(:empty) {
+	border            : 0;
+	border-left       : 4px solid #00a0d2;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+	box-shadow        : 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+[dir="rtl"] .CT_CTDI__demo-import-notice:not(:empty) {
+	border      : 0;
+	border-right: 4px solid #00a0d2;
+}
+
+/* Plugin button */
+
+.CT_CTDI__button-container {
+	margin-top: 1.62em;
+}
+
+/* AJAX loader */
+
+p.CT_CTDI__ajax-loader,
+p.CT_CTDI__install-plugin {
+	font-size: 1.5em;
+	display  : none;
+}
+
+.CT_CTDI__ajax-loader .spinner,
+.CT_CTDI__install-plugin .spinner {
+	display      : inline-block;
+	float        : none;
+	visibility   : visible;
+	margin-bottom: 6px;
+}
+
+
+/* New grid layout */
+
+.CT_CTDI__gl-navigation li a {
+	-webkit-box-shadow: none;
+	box-shadow        : none;
+}
+
+.CT_CTDI__gl-item {
+	float             : left;
+	width             : 100%;
+	margin            : 0 0 20px 0;
+	position          : relative;
+	border            : 1px solid #ddd;
+	-webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1);
+	box-shadow        : 0 1px 1px -1px rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing   : border-box;
+	box-sizing        : border-box;
+}
+
+.CT_CTDI__gl-item-image-container {
+	display                    : block;
+	overflow                   : hidden;
+	position                   : relative;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition         : opacity 0.2s ease-in-out;
+	transition                 : opacity 0.2s ease-in-out;
+}
+
+.CT_CTDI__gl-item-image-container::after {
+	content    : "";
+	display    : block;
+	padding-top: 66.66666%;
+}
+
+.CT_CTDI__gl-item-image {
+	height            : auto;
+	position          : absolute;
+	left              : 0;
+	top               : 0;
+	width             : 100%;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	transition        : opacity 0.2s ease-in-out;
+}
+
+.CT_CTDI__gl-item-image--no-image {
+	display   : inline-block;
+	width     : 50%;
+	text-align: center;
+	position  : absolute;
+	top       : 45%;
+	right     : 25%;
+	left      : 25%;
+}
+
+.CT_CTDI__gl-item-footer {
+	height            : 30px;
+	margin            : 0;
+	padding           : 10px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow        : inset 0 1px 0 rgba(0, 0, 0, 0.1);
+	background        : #ffffff;
+	background        : rgba(255, 255, 255, 0.65);
+}
+
+h4.CT_CTDI__gl-item-title {
+	width        : 70%;
+	overflow     : hidden;
+	white-space  : nowrap;
+	text-overflow: ellipsis;
+	display      : inline-block;
+	margin       : 6px 0 0 0;
+}
+
+.CT_CTDI__gl-item-footer--with-preview h4.CT_CTDI__gl-item-title {
+	width: calc(100% - 154px);
+}
+
+.CT_CTDI__gl-item-button {
+	float: right;
+}
+
+.CT_CTDI__gl-item-button+.CT_CTDI__gl-item-button {
+	margin-right: 5px;
+}
+
+@media (max-width: 782px) {
+
+	h4.CT_CTDI__gl-item-title,
+	.CT_CTDI__gl-item-footer--with-preview h4.CT_CTDI__gl-item-title {
+		width        : 100%;
+		margin-bottom: 10px;
+	}
+
+	.CT_CTDI__gl-item-button {
+		width        : calc(50% - 10px);
+		margin-bottom: 10px;
+	}
+
+	.CT_CTDI__gl-item-button+.CT_CTDI__gl-item-button {
+		float: left;
+	}
+
+	.CT_CTDI__gl-item-footer {
+		height: 72px;
+	}
+}
+
+.CT_CTDI__gl-header {
+	display         : inline-block;
+	width           : calc(100% - 40px);
+	background-color: #ffffff;
+	margin-bottom   : 20px;
+	padding         : 0 20px;
+}
+
+.CT_CTDI__gl-navigation {
+	font-size: 13px;
+	width    : 100%;
+	float    : left;
+}
+
+.CT_CTDI__gl-navigation ul {
+	list-style-type: none;
+	margin         : 0;
+	padding        : 0;
+	overflow       : hidden;
+}
+
+.CT_CTDI__gl-navigation li {
+	float : left;
+	margin: 0 15px;
+}
+
+.CT_CTDI__gl-navigation li.active a,
+.CT_CTDI__gl-navigation li.active a:hover {
+	border-bottom: 4px solid #666666;
+}
+
+.CT_CTDI__gl-navigation li a {
+	display        : block;
+	text-align     : center;
+	text-decoration: none;
+	color          : #444444;
+	border-bottom  : 4px solid #ffffff;
+	padding        : 15px 0;
+}
+
+.CT_CTDI__gl-navigation li a:hover {
+	color        : #00a0d2;
+	border-bottom: 4px solid #ffffff;
+	cursor       : pointer;
+}
+
+.CT_CTDI__gl-search-input {
+	width : 100%;
+	margin: 10px 0;
+}
+
+@media (min-width: 640px) {
+	.CT_CTDI__gl-navigation {
+		width: calc(100% - 180px);
+	}
+
+	.CT_CTDI__gl-navigation li {
+		margin: 0;
+	}
+
+	.CT_CTDI__gl-navigation li a {
+		padding: 15px;
+	}
+
+	.CT_CTDI__gl-search-input {
+		display   : inline-block;
+		width     : 180px;
+		height    : 30px;
+		margin    : 0;
+		margin-top: 11px;
+	}
+
+	.CT_CTDI__gl-item-container {
+		margin-right: -20px;
+	}
+
+	.CT_CTDI__gl-item {
+		width : calc(50% - 20px);
+		margin: 0 20px 20px 0;
+	}
+}
+
+@media (min-width: 1120px) {
+	.CT_CTDI__gl-item-container {
+		/*margin-right: -30px;*/
+	}
+
+	.CT_CTDI__gl-item {
+		width : calc(33.333% - 30px);
+		margin: 0 30px 30px 0;
+	}
+}
+
+/* Grid animations */
+@keyframes CT_CTDI-fade {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.CT_CTDI-is-fadeout {
+	animation: CT_CTDI-fade linear 200ms 1 forwards;
+}
+
+.CT_CTDI-is-fadein {
+	animation: CT_CTDI-fade linear 200ms 1 reverse forwards;
+}
+
+/* Grid layout modal window */
+
+.CT_CTDI__modal-image-container {
+	width   : 100%;
+	height  : 180px;
+	margin  : 0;
+	overflow: hidden;
+}
+
+.newsletter-form {
+	outline: none;
+	margin : 10px 0;
+	display: block;
+}
+
+.nwsltr:focus {
+	box-shadow: none !important;
+	border    : 1px solid #b4b9be !important;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1) !important;
+}
+
+.CT_CTDI__modal-item-title {
+	margin-top   : 0;
+	font-weight  : bold;
+	margin-bottom: 0.5em;
+}
+
+.CT_CTDI__modal-image-container img {
+	width: 100%;
+}
+
+.CT_CTDI__modal-notice.CT_CTDI__demo-import-notice:not(:empty) {
+	border     : 1px solid #e5e5e5;
+	border-left: 4px solid #00a0d2;
+	margin     : 1em 0 0;
+}
+
+/* Redux */
+.CT_CTDI__redux-option-name-label {
+	margin-right: 5px;
+}
+
+/* Pro Badge */
+.ct-pro-badge {
+	position          : absolute;
+	top               : 15px;
+	right             : 0;
+	z-index           : 1;
+	padding           : 6px 10px 6px;
+	background        : #5bb32e;
+	border-radius     : 2px 0 0 2px;
+	-webkit-box-shadow: 0px 6px 10px -7px #5bb32e;
+	-moz-box-shadow   : 0px 6px 10px -7px #5bb32e;
+	box-shadow        : 0px 6px 10px -7px #5bb32e;
+}
+
+.ct-pro-badge .ct-pro-text {
+	line-height: 1;
+	color      : #fff;
+	margin     : 0;
+	font-size  : 12px;
+}
+
+
+/* .minimalist-blog .CT_CTDI__gl-item:nth-child(n+2),*/
+.minimalist-blog .CT_CTDI__gl-header,
+.minimalist-pro .CT_CTDI__gl-header {
+	display: none;
+}
+
+/* .prime-business .CT_CTDI__gl-item:nth-child(n+2), */
+.prime-business .CT_CTDI__gl-header,
+.prime-business-pro .CT_CTDI__gl-header,
+.writer-blog .CT_CTDI__gl-header,
+.writer-blog-pro .CT_CTDI__gl-header,
+.writer-pro .CT_CTDI__gl-header {
+	display: none;
+}
+
+.email-id {
+	width        : 100%;
+	margin-bottom: 0;
+}
+
+.newsletter-form-input {
+	margin-top   : 10px;
+	display      : block;
+	margin-bottom: 5px;
+}

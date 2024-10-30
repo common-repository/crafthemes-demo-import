@@ -1,0 +1,18 @@
+/*#toplevel_page_ct-crafthemes-demo-import,
+#toplevel_page_ct-crafthemes-demo-import a:focus {
+    background-image: linear-gradient(45deg, #d30ab5 0%, #1b54d9 100%);
+}
+
+#toplevel_page_ct-crafthemes-demo-import a,
+#toplevel_page_ct-crafthemes-demo-import a:hover,
+li#toplevel_page_ct-crafthemes-demo-import:hover div.wp-menu-image::before,
+li#toplevel_page_ct-crafthemes-demo-import > a.menu-top:focus,
+li#toplevel_page_ct-crafthemes-demo-import a:focus div.wp-menu-image::before {
+    color: #fff;
+}
+*/
+.ct-theme-notice-content {
+    margin-bottom: 12px;
+}
+
+
